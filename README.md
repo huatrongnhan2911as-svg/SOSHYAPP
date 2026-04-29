@@ -1,74 +1,66 @@
-# 🍔 SOSHY Restaurant - Online Food Ordering System
-> **Dự án:** Xây dựng ứng dụng đặt món ăn trực tuyến tích hợp thanh toán cho nhà hàng SOSHY.
+# 🍔 SOSHY - Online Food Ordering & Payment System
+> **Đề tài:** Xây dựng ứng dụng đặt món ăn trực tuyến tích hợp thanh toán cho nhà hàng SOSHY.
 
-Dự án này là một giải pháp chuyển đổi số toàn diện cho nhà hàng SOSHY, cho phép khách hàng duyệt thực đơn, đặt món và thanh toán trực tuyến một cách nhanh chóng và bảo mật.
+Dự án tập trung vào việc tối ưu hóa quy trình vận hành cho nhà hàng và mang lại trải nghiệm đặt món hiện đại, bảo mật cho khách hàng.
 
 ---
 
-## 👥 Thành viên nhóm & Phân công nhiệm vụ (Team & Roles)
+## 👥 Đội ngũ thực hiện (Project Team)
 
-Dự án được thực hiện bởi nhóm 5 thành viên với sự phối hợp chặt chẽ giữa các vai trò nghiệp vụ và kỹ thuật:
+Dự án được triển khai bởi nhóm với sự phân công chuyên biệt theo từng giai đoạn:
 
-| Thành viên | Vai trò | Trách nhiệm chính |
+| Thành viên | Vai trò chính | Nhiệm vụ cụ thể |
 | :--- | :--- | :--- |
-| **Ngân** | Business Analyst (BA) | Khảo sát quy trình nghiệp vụ, lấy yêu cầu từ nhà hàng SOSHY. |
-| **Trung** | Business Analyst (BA) | Đặc tả yêu cầu hệ thống (SRS), phân tích luồng thanh toán. |
-| **Thanh** | UI/UX Designer | Thiết kế giao diện (Figma), trải nghiệm người dùng và bộ nhận diện SOSHY. |
-| **Nhân** | Fullstack Developer | Xây dựng Backend (API, Database) và Frontend (Giao diện người dùng). |
-| **Uy** | Quality Assurance (BA/QA) | Kiểm thử quy trình đặt hàng, đảm bảo tính đúng đắn của logic nghiệp vụ. |
+| **Ngân** | Business Analyst (BA) | Khảo sát quy trình, đặc tả yêu cầu nghiệp vụ hệ thống. |
+| **Trung** | Business Analyst (BA) | Phân tích luồng dữ liệu, xây dựng tài liệu SRS. |
+| **Thanh** | UI/UX Designer | Thiết kế bản vẽ Prototype, Wireframe và nhận diện thương hiệu. |
+| **Nhân** | Fullstack Developer | Phát triển toàn bộ Backend, Frontend và tích hợp thanh toán. |
+| **Uy** | BA & QA Specialist | Kiểm thử chất lượng (Manual Test), UAT và quản lý tiến độ. |
 
 ---
 
-## 🕒 Tiến độ thực hiện (Timeline)
+## 📅 Lộ trình chi tiết (Timeline 23/03 - 29/04)
 
-Dự án được triển khai từ ngày **23/03** đến ngày **29/04** với các mốc quan trọng:
+Dựa trên bảng kế hoạch chi tiết của nhóm, các giai đoạn được phân bổ như sau:
 
-- **Tuần 1 (23/03 - 29/03):** - [BA] Khảo sát thực tế tại nhà hàng SOSHY.
-  - [BA] Thống nhất danh mục món ăn và quy trình thanh toán.
-- **Tuần 2 (30/03 - 05/04):**
-  - [UI/UX] Hoàn thành thiết kế Wireframe và Mockup (Dark Mode chủ đạo).
-  - [Dev] Thiết kế sơ đồ thực thể mối quan hệ (ERD) cho Database.
-- **Tuần 3 & 4 (06/04 - 20/04):**
-  - [Dev] Code chức năng Giỏ hàng, Menu động và Quản lý đơn hàng.
-  - [Dev] Tích hợp cổng thanh toán trực tuyến (VNPay/MoMo).
-- **Tuần 5 (21/04 - 29/04):**
-  - [BA/QA] Kiểm thử toàn bộ hệ thống (UAT).
-  - [Team] Hoàn thiện tài liệu hướng dẫn và đóng gói mã nguồn.
+### Giai đoạn 1: Phân tích & Thiết kế (23/03 - 05/04)
+- **23/03 - 29/03:** Khảo sát thực tế nhà hàng SOSHY, xác định các nghiệp vụ cần thiết (Menu, đặt bàn, thanh toán).
+- **30/03 - 05/04:** Thiết kế giao diện UI/UX trên Figma. Xây dựng sơ đồ cơ sở dữ liệu (ERD).
 
----
+### Giai đoạn 2: Phát triển hệ thống (06/04 - 23/04)
+- **Xây dựng Backend:** Thiết lập API, quản lý người dùng và lưu trữ dữ liệu món ăn.
+- **Xây dựng Frontend:** Code giao diện tương tác, giỏ hàng động và bộ lọc món ăn.
+- **Tích hợp thanh toán:** Kết nối cổng thanh toán trực tuyến (VNPay/MoMo/Thẻ nội địa).
 
-## 🚀 Tính năng cốt lõi (Key Features)
-
-- **Smart Menu:** Hiển thị món ăn theo danh mục, có bộ lọc theo giá và độ phổ biến.
-- **Real-time Cart:** Giỏ hàng cập nhật tức thì, cho phép tùy chỉnh ghi chú cho đầu bếp.
-- **Secure Payment:** Tích hợp thanh toán qua QR Code hoặc thẻ ngân hàng nội địa.
-- **Order Tracking:** Khách hàng theo dõi trạng thái đơn hàng (Đang chuẩn bị -> Đang giao).
-- **Admin Dashboard:** Trang quản trị cho nhà hàng quản lý doanh thu, món ăn và đơn hàng.
+### Giai đoạn 3: Kiểm thử & Hoàn thiện (24/04 - 29/04)
+- **24/04 - 27/04:** Kiểm thử toàn bộ tính năng (Testing), sửa lỗi giao diện và logic thanh toán.
+- **28/04 - 29/04:** Hoàn thiện tài liệu dự án, viết README và đóng gói mã nguồn để báo cáo.
 
 ---
 
-## 🛠 Công nghệ sử dụng (Tech Stack)
+## 🛠 Công nghệ áp dụng (Tech Stack)
 
-- **Frontend:** React.js / Next.js, Tailwind CSS.
-- **Backend:** Node.js (Express) hoặc PHP (Laravel).
-- **Database:** MySQL hoặc PostgreSQL.
-- **Payment API:** VNPay Sandbox / Stripe.
-- **Design:** Figma.
+- **Ngôn ngữ & Framework:** React.js (Frontend), Node.js/PHP (Backend).
+- **Cơ sở dữ liệu:** MySQL / PostgreSQL.
+- **Thanh toán:** Tích hợp API cổng thanh toán trực tuyến.
+- **Công cụ quản lý:** GitHub, Figma, Excel (Timeline tracking).
 
 ---
 
-## 📊 Biểu đồ tiến độ (Gantt Chart)
+## 📈 Sơ đồ tiến độ (Gantt Chart)
 
 ```mermaid
 gantt
-    title Lộ trình dự án SOSHY (23/03 - 29/04)
+    title SOSHY Project Timeline (23/03 - 29/04)
     dateFormat  YYYY-MM-DD
-    section Nghiệp vụ & Thiết kế
-    Lấy yêu cầu (Ngân, Trung)   :2026-03-23, 7d
-    Thiết kế UI/UX (Thanh)      :2026-03-30, 7d
-    section Phát triển & Test
-    Lập trình Backend & FE (Nhân):2026-04-06, 15d
-    Tích hợp Thanh toán         :2026-04-15, 6d
-    Kiểm thử & Fix bug (Uy)     :2026-04-21, 7d
-    section Hoàn thiện
-    Nộp dự án                   :milestone, 2026-04-29, 0d
+    section BA Phase
+    Phân tích nghiệp vụ (Ngân, Trung) :2026-03-23, 7d
+    Xác định yêu cầu hệ thống       :2026-03-30, 5d
+    section Design Phase
+    Thiết kế UI/UX (Thanh)          :2026-03-30, 7d
+    section Dev Phase
+    Lập trình Backend & FE (Nhân)   :2026-04-06, 17d
+    Tích hợp cổng thanh toán        :2026-04-18, 5d
+    section QA Phase
+    Kiểm thử & Fix Bug (Uy)         :2026-04-24, 4d
+    Hoàn thiện & Đóng gói           :2026-04-28, 2d
